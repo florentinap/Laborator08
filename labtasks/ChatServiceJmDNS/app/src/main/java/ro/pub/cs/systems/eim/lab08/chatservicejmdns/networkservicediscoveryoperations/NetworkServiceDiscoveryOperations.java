@@ -180,13 +180,7 @@ public class NetworkServiceDiscoveryOperations {
         }
 	// question 5d
 	// set the title of the activity to the advertised service name
-	// Log name, type and port
-        chatActivity.setTitle(serviceInfo.getName());
-        Log.i(Constants.TAG, "Register service " +
-                serviceInfo.getName() + ":" +
-                serviceInfo.getTypeWithSubtype() + ":" +
-                serviceInfo.getPort()
-        );
+	// Log name, type and port 
     }
 
     public void unregisterNetworkService() {
@@ -204,7 +198,6 @@ public class NetworkServiceDiscoveryOperations {
         chatActivity.setConversations(conversations);
         // question 5d
 	// reset the title to default when not advertising anything
-        chatActivity.setTitle("Chat Service JmDNS");
     }
 
     public void startNetworkServiceDiscovery() {

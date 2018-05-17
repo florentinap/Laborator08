@@ -90,7 +90,6 @@ public class ChatClient {
                     //   - add the message to the conversationHistory
                     //   - if the ChatConversationFragment is visible (query the FragmentManager for the Constants.FRAGMENT_TAG tag)
 
-                    
                 } catch (Exception exception) {
                     Log.e(Constants.TAG, "An exception has occurred: " + exception.getMessage());
                     if (Constants.DEBUG) {
